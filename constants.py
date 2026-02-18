@@ -29,7 +29,7 @@ TIERS: dict[int, TierConfig] = {
         explanation=(
             "This tier shows what happens when you send a sensitive mental health"
             " prompt to a raw open-source model with zero guidance. The model has"
-            " no safety instructions and may produce unhelpful or harmful responses."
+            " minimal safety instructions and may produce unhelpful or harmful responses."
         ),
         model_name=_ollama_model_name(),
     ),
@@ -39,10 +39,9 @@ TIERS: dict[int, TierConfig] = {
         accent="#2563eb",
         badge="🛡️ System prompt only",
         explanation=(
-            "Same open-source model, but now with a carefully crafted system prompt"
-            " that instructs it to be empathetic, watch for warning signs, and"
-            " recommend professional help. Shows the power (and limits) of prompt"
-            " engineering alone."
+            "Same open-source model, but now with a basic system prompt that asks"
+            " it to be friendly, empathetic, and suggest professional help. Shows"
+            " what a simple, non-specialized prompt can (and can't) do."
         ),
         model_name=_ollama_model_name(),
     ),

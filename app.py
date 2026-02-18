@@ -381,22 +381,8 @@ with tab3:
 with tab4:
     _render_tier_header(4)
 
-    st.markdown(
-        """<div class="info-card">
-        <p>For the final tier, we switch to a <strong>purpose-built mental health
-        application</strong> (e.g., Wysa) to see how domain-specific clinical
-        engineering shapes the response. The presenter will demo this live on a
-        separate screen.</p>
-        <p><strong>What Tier 4 adds beyond general AI:</strong></p>
-        <ul>
-            <li>Evidence-based therapeutic frameworks (CBT, DBT)</li>
-            <li>Clinical input in conversation design</li>
-            <li>Structured safety escalation protocols</li>
-            <li>Peer-reviewed validation</li>
-            <li>Purpose-built UX for sensitive conversations</li>
-        </ul>
-        </div>""",
-        unsafe_allow_html=True,
-    )
+    _left, _center, _right = st.columns([3, 2, 3])
+    with _center:
+        st.video("assets/wysa-demo.MP4")
 
     _render_behind_the_scenes(4)
