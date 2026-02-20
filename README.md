@@ -1,4 +1,4 @@
-# Under the Hood: How AI Responds to Mental Health
+# 🧠 Under the Hood: How AI Responds to Mental Health
 
 A live demo app showing how different layers of AI engineering produce different responses to the same mental health prompt.
 
@@ -45,9 +45,9 @@ The app sends the same user prompt through **four tiers** of AI, each with incre
 | Tier | What It Is | Model |
 |------|-----------|-------|
 | **1** | Raw open model, no guidance | mistral:7b-instruct (local) |
-| **2** | Same model + mental health system prompt | mistral:7b-instruct (local) |
-| **3** | Frontier model + RLHF + system prompt + user context | Claude Sonnet 4.5 or GPT-5.2 (API) |
-| **4** | Purpose-built clinical app | Demoed live in Wysa/Woebot |
+| **2** | Same model + simple system prompt | mistral:7b-instruct (local) |
+| **3** | Frontier model + RLHF + complex system prompt with user context | Claude Sonnet 4.5 or GPT-5.2 (API) |
+| **4** | Purpose-built clinical app | Demoed live in Wysa |
 
 Click each tab, then "Send to This Tier" to see how the same prompt gets different responses. Toggle "Behind the Scenes" to see the system prompt powering each tier.
 
@@ -67,4 +67,4 @@ If mistral:7b is too slow, switch to a smaller model by setting `OLLAMA_MODEL=ph
 
 ## Note
 
-Tier 4 is not an in-app demo — the presenter switches to a live mental health application (e.g., Wysa, Woebot) to show what purpose-built clinical AI looks like.
+Tier 4 is not an in-app demo — instead it showcases a recording from a mental health application (e.g., Wysa) to show what purpose-built clinical AI looks like.
