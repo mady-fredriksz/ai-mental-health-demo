@@ -2,7 +2,9 @@
 
 A live demo app showing how different layers of AI engineering produce different responses to the same mental health prompt.
 
-![Screenshot placeholder](screenshot.png)
+![Demo view](assets/demo-view.png)
+
+**Accompanying slides:** [ai-chatbot-intro.pdf](assets/ai-chatbot-intro.pdf)
 
 ## Prerequisites
 
